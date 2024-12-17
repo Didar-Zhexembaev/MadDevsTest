@@ -10,7 +10,7 @@ def main(max_len):
         source = f.read()
         for fragment in split_message(source, max_len):
             print(f'==={len(fragment)}===')
-            print(fragment)
+            # print(fragment)
             print("===")
 
 if __name__ == '__main__':

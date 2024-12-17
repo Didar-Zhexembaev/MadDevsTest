@@ -156,3 +156,5 @@ def split_message(source: str, max_len=MAX_LEN) -> Generator[str, None, None]:
 
     if len(partial_html) > 0:
         yield partial_html
+    
+    buffer = array.array('u')
