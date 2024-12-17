@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "html-fragmentor"
+version = "0.0.1"
+description = "I wanna in team MadDevs 🤘"
+authors = ["Didar Zhexembaev <didar.zheksembai@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+beautifulsoup4 = "^4.12.3"
+htmlentities = "^0.3.0"
+six = "^1.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
