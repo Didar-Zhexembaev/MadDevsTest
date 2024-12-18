@@ -36,7 +36,7 @@ def closing_parent_tags_html(tags_hierarchy: deque) -> str:
         tag_name = tag.get_name()
         closing_tag = closing_tag_html(tag.get_name()) + tag.get_after_tag_content()
         if tag_name not in BLOCK_TAGS:
-            raise TagCanNotBeSplittenError(tag.get_html())
+            raise TagCanNotBeSplittenError(opening_tag_html(tag.get_name(), tag.get_attrs()))
         closing_tags.append(closing_tag)
 
     return list_to_str(reversed(closing_tags))

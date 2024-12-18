@@ -34,9 +34,6 @@ class ThreadSafeCounter:
         with self.lock:
             return self.element.attrs
 
-    def get_html(self) -> str:
-        return str(self.element)
-
     def get_after_tag_content(self) -> str:
         with self.lock:
             content_buffer = []
